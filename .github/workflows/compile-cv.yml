@@ -18,6 +18,6 @@ jobs:
           # LaTeX engine to be used
           #compiler: # optional, default is latexmk
           # Extra arguments to be passed to the latex compiler
-          args: -xelatex -latexoption=-file-line-error -latexoption=-interaction=nonstopmode # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
+          args: -xelatex cv.pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
           # Install extra packages by apt-get
           #extra_system_packages: # optional
