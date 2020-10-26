@@ -68,6 +68,28 @@
 \RequirePackage[quiet]{fontspec}
 \RequirePackage{unicode-math}
 
+\usepackage{fontawesome}
+\newfontfamily{\FABrands}{Font Awesome 5 Brands Regular}
+\newfontfamily{\FA}{Font Awesome 5 Free Regular}
+\newfontfamily{\FASolid}{Font Awesome 5 Free Solid}
+
+\def\faXingSquare{\symbol{"F169}}
+\def\xing{{\FABrands \faXingSquare}}
+
+\def\faGithubSquare{\symbol{"F092}}
+\def\github{{\FABrands \faGithubSquare}}
+
+\def\faLinkedInSquare{\symbol{"F08C}}
+\def\linkedin{{\FABrands \faLinkedInSquare}}
+
+\def\faFacebookSquare{\symbol{"F082}}
+\def\facebook{{\FABrands \faFacebookSquare}}
+
+\def\envelope{{\FA \faEnvelopeAlt}}
+\def\starsolid{{\FASolid \faStar}}
+\def\starempty{{\FA \faStar}}
+\def\globe{{\FASolid \faGlobe}}
+
 \newfontfamily\bodyfont
 [BoldFont=texgyreheros-bold.otf,
 ItalicFont=texgyreheros-italic.otf,
@@ -195,7 +217,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.8}(1.5, 4.33)
   \begin{flushright}
   \obeycr
 }{%
@@ -347,7 +369,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%%%
 
 \RequirePackage[left=6.1cm,top=2cm,right=2.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
-\RequirePackage{hyperref}
+\RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false,       
     linkcolor=red,          

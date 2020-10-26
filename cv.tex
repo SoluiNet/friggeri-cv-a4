@@ -41,19 +41,24 @@
 City, State 12345
 Country
 ~
-+0 (000) 111 1111
-+0 (000) 111 1112
+\href{+00001111111}{+0 (000) 111 1111}
+\href{+00001111112}{+0 (000) 111 1112}
 ~
-\href{mailto:john@smith.com}{john@smith.com}
-\href{http://www.smith.com}{http://www.smith.com}
-\href{http://facebook.com/johnsmith}{fb://jsmith}
+\href{mailto:john@smith.com}{\footnotesize john@smith.com \envelope}
+\href{http://www.smith.com}{\footnotesize http://www.smith.com \globe}
+\href{http://facebook.com/johnsmith}{\footnotesize fb://jsmith \facebook}
+\href{https://www.xing.com/profile/John\_Smith}{\footnotesize John Smith \xing}
+\href{https://www.linkedin.com/in/john-smith-123456789}{\footnotesize John Smith \linkedin}
 \section{languages}
-english mother tongue
-spanish \& italian fluency
+\begin{footnotesize} english \starsolid\starsolid\starsolid\starsolid\starsolid\\ % mother tongue
+spanish \starsolid\starsolid\starsolid\starsolid\starempty\\ % business fluent
+italian \starsolid\starsolid\starempty\starempty\starempty % conversation fluent
+\end{footnotesize}
 \section{programming}
-{\color{red} $\varheartsuit$} JavaScript
-Python, C++, PHP
-CSS3 \& HTML5
+\begin{footnotesize} JavaScript {\color{red} $\varheartsuit$}
+\mbox{Python, C++, PHP\hspace{0.3cm}}
+\mbox{CSS3 \& HTML5\hspace{0.3cm}}
+\end{footnotesize}
 \end{aside}
 
 %----------------------------------------------------------------------------------------
