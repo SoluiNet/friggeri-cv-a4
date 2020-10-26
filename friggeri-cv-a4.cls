@@ -69,9 +69,9 @@
 \RequirePackage{unicode-math}
 
 \usepackage{fontawesome}
-\newfontfamily{\FABrands}{Font Awesome 5 Brands Regular}
-\newfontfamily{\FA}{Font Awesome 5 Free Regular}
-\newfontfamily{\FASolid}{Font Awesome 5 Free Solid}
+\newfontfamily{\FABrands}[Path=fonts/]{Font Awesome 5 Brands-Regular-400.otf}
+\newfontfamily{\FA}[Path=fonts/]{Font Awesome 5 Free-Regular-400.otf}
+\newfontfamily{\FASolid}[Path=fonts/]{Font Awesome 5 Free-Solid-900.otf}
 
 \def\faXingSquare{\symbol{"F169}}
 \def\xing{{\FABrands \faXingSquare}}
@@ -91,23 +91,24 @@
 \def\globe{{\FASolid \faGlobe}}
 
 \newfontfamily\bodyfont
-[BoldFont=texgyreheros-bold.otf,
+[Path=fonts/,
+BoldFont=texgyreheros-bold.otf,
 ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf]
 {texgyreheros-regular.otf}
-\newfontfamily\thinfont[]{Lato-Light.ttf}
-\newfontfamily\headingfont[]{texgyreheros-bold.otf}
+\newfontfamily\thinfont[Path=fonts/]{Lato-Light.ttf}
+\newfontfamily\headingfont[Path=fonts/]{texgyreheros-bold.otf}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont
-[Mapping=tex-text, Color=textcolor,
+[Path=fonts/, Mapping=tex-text, Color=textcolor,
 BoldFont=texgyreheros-bold.otf,
 ItalicFont=texgyreheros-italic.otf,
 BoldItalicFont=texgyreheros-bolditalic.otf
 ]
 {texgyreheros-regular.otf}
 
-\setmathfont{texgyreheros-regular.otf}
+\setmathfont[Path=fonts/]{texgyreheros-regular.otf}
 %%%
 
 %%%%%%%%%%
