@@ -4,7 +4,7 @@ Version=4
 
 [ProjectInfo]
 MainFile=cv.tex
-UseBibTeX=0
+UseBibTeX=1
 UseMakeIndex=0
 ActiveProfile=XeLaTeX ⇨ PDF
 ProjectLanguage=de
